@@ -1,0 +1,36 @@
+### Pre_Order Traversal
+
+## Source Code
+    
+    ### Pre_Order Traversal
+     
+    void preorderTraversal1(TreeNode root){
+        if(root==null){
+            return;
+        }
+        System.out.print(root.val + " ");
+        inorderTraversal1(root.left);
+        inorderTraversal1(root.right);
+    }
+    
+    ### In_Order Traversal
+    
+    void inorderTraversal1(TreeNode root){
+        if(root==null){
+            return;
+        }
+        inorderTraversal1(root.left);
+        System.out.print(root.val + " ");
+        inorderTraversal1(root.right);
+    }
+    
+    ### Post_Order Traversal
+    
+    void postorderTraversal1(TreeNode root){
+        if(root==null){
+            return;
+        }
+        inorderTraversal1(root.left);
+        inorderTraversal1(root.right);
+        System.out.print(root.val + " ");
+    }
